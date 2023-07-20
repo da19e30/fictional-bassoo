@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Victor</a>
+            </div>
+            <nav id="nav" >
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre mi</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">Portfolio</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars" id="icon-menu"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido__banner">
+            <div class="contenedor__img">
+                <img src="assets/profile.jpg" alt="">
+            </div>
+            <h1>Victor Alfonso Salas Arroyo</h1>
+            <h2>Desarrollador web</h2>
+            <div class="redes">
+                <a href="https://github.com/da19e30" target="_blank"><img class="icono" src="assets/github.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/alfonso1995/" target="_blank"><img class="icono" src="assets/linkedin.png" alt=""></a>
+                <a href="https://www.facebook.com/vsalasarroyo" target="_blank"><img class="icono" src="assets/facebook.png" alt=""></a>
+                <a href="https://www.instagram.com/varon_de_guerra26/" target="_blank"><img class="icono" src="assets/instagram (1).png" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido__seccion">
+            <h2>Sobre Mi</h2>
+            <p><span> Hola, mi nombre es Victor Alfonso Salas Arroyo</span> tengo 27 años naci en colombia, soy un talentoso y prometedor profesional en el campo del desarrollo web Frontend, desempeñándome actualmente como Junior Frontend Developer. Con una formación sólida y una pasión por la tecnología, estoy en constante búsqueda de oportunidades para aprender y crecer en mi carrera. <br>
+
+                Como Junior Frontend Developer, he adquirido conocimientos fundamentales en HTML, CSS y JavaScript. Aunque me encuentro en las primeras etapas de mi carrera, he demostrado una sólida comprensión de estos lenguajes y mi capacidad para utilizarlos en proyectos reales. Estoy familiarizado con la estructura básica de HTML y soy capaz de crear páginas web bien organizadas y semánticas. Además, puedo aplicar estilos usando CSS para dar vida a las interfaces web, logrando diseños atractivos y responsivos.</p>
+
+            <div class="fila">
+                   <!-- datos personales -->
+                <div class="col">
+                     <h3>Datos Personales</h3>
+                     <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            05-9-1995
+                        </li>
+                        <li>
+                            <strong>Telefono</strong>
+                            +57 314 727 5757
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            patarroyo1995@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.newdigitalmrk.com
+                        </li>
+                        <li>
+                            <strong>Direccion</strong>
+                            calle 48bb #99df - 9 Medellin, colombia
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Desarrollador web Junior frontend</span>
+                        </li>
+                     </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                     <h3>Intereses</h3>
+                     <div class="contenedor__intereses">
+                        <div class="interes">
+                            <img src="assets/leer.png" alt="imagen web">
+                            <span>leer</span>
+                        </div>
+                        <div class="interes">
+                            <img src="assets/avion.png" alt="imagen web">
+                            <span>Viajar</span>
+                        </div>
+                        <div class="interes">
+                            <img src="assets/estudiando.png" alt="imagen web">
+                            <span>Estudiar</span>
+                        </div>
+                        <div class="interes">
+                            <img src="assets/caminar.png" alt="imagen web">
+                            <span>Caminar</span>
+                        </div>
+                        <div class="interes">
+                            <img src="assets/fotografo.png" alt="imagen web">
+                            <span>Fotos</span>
+                        </div>
+                        <div class="interes">
+                            <img src="assets/nota-musical.png" alt="imagen web">
+                            <span>Musica Cristiana</span>
+                        </div>
+                        <div class="interes">
+                            <img src="assets/manos.png" alt="imagen web">
+                            <span>Orar</span>
+                        </div>
+                        <div class="interes">
+                            <img src="assets/libro.png" alt="imagen web">
+                            <span>Predicar</span>
+                        </div>
+                     </div>
+                </div>
+            </div>
+            <button>
+               <a href="https://drive.google.com/file/d/1HFa_vQjFbUZxdcqUHS7wpAXaoe1YayT3/view?usp=drive_link" target="_blank"> Descargar CV <img src="assets/curriculum-vitae.png" alt=""></a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Git</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Aptitud</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Desarrollador web frontend</h4>
+                        <span class="casa">Alura Latam</span>
+                        <span class="fecha">Abr.2023 - Sept.2023</span>
+                        <p>Comencé mi aprendizaje con una introducción completa a HTML y CSS, los lenguajes básicos de construcción y diseño de sitios web. Aprendí a estructurar y organizar el contenido de las páginas web usando etiquetas semánticas, ya dar estilo a estos elementos usando selectores, propiedades y valores en CSS. Además, explore técnicas avanzadas como flexbox y grid para crear diseños más sofisticados y responsivos.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>HTML & CSS</h4>
+                        <span class="casa">Openbootcamp</span>
+                        <span class="fecha">jun.2022 - nov.2022</span>
+                        <p>Durante mi experiencia en el bootcamp de programación, adquirí una comprensión sólida de HTML y CSS, que son los fundamentos para sitios web. A través de los módulos y proyectos prácticos, pude aprender y aplicar los conceptos esenciales de ambos lenguajes.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Desarrollador web</h4>
+                        <span class="casa">Industrias de talento</span>
+                        <span class="fecha">Mar.2022 - Oct.2022</span>
+                        <p>Durante mi participación en el bootcamp de programación, adquiri un conjunto sólido de habilidades como desarrollador web. A lo largo del programa, me sumergió en una variedad de tecnologías y conceptos fundamentales que son fundamentales para el desarrollo web moderno.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Alura Latam</span>
+                        <span class="fecha">Abr.2023 - May.2023</span>
+                        <p>Participé en un proyecto de desarrollo web utilizando HTML, CSS y JavaScript para crear una página de encriptación de texto responsiva. Trabajé en colaboración con un equipo de programadores, siguiendo las mejores prácticas de desarrollo y asegurando la funcionalidad del sitio web. 
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Alura Latam</span>
+                        <span class="fecha">Jun.2023 - Jul.2023</span>
+                        <p>AluraGeek es un E-commerce de fantasía creado para el challenge de Front-end del proyecto Oracle ONE - Alura. el mismo cuenta con organización por categorías, un buscador y la posibilidad de que un administrador pueda loguearse para modificar o agregar items a la tienda (CRUD). Las tecnologías usadas fueron HTML, CSS y JavaScript. Las tarjetas de los productos se cargan dinámicamente utilizando FETCH  y consultando a una base de datos simulada mediante el uso de JSON</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- SECCION PORTFOLIO -->
+     <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="assets/Captura.jpg" alt="encriptado">
+                    <div class="overlay">
+                        <h3>Encriptador de texto</h3>
+                        <p>Solo letras minusculas</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="assets/captura-2.jpg" alt="alurageek">
+                    <div class="overlay">
+                        <h3>Alurageek</h3>
+                        <p>E-commerce</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- SECCION CONTACTO -->
+     <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input id="nombre" type="" placeholder="Tú Nombre">
+                    <input id="telefono" type="" placeholder="Número telefónico">
+                    <input id="correo" type="" placeholder="Dirección de correo">
+                    <input id="tema" type="" placeholder="Tema">
+                    <textarea id="mensaje" name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button onclick="enviarMensaje()">
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="assets/mapa.jpg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Medellin, Colombia
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Contactame: +57 314 727 5757 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: patarroyo1995@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/vsalasarroyo" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/victora07328587" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/alfonso1995/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="validacion.js"></script>
+</body>
+
+</body>
+</html>
